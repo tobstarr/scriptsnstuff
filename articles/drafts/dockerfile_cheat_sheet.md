@@ -2,7 +2,7 @@
 
 ## Install debian packages
 
-	RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+	RUN apt-get update && apt-get install --no-install-recommends -y curl && rm -rf /var/lib/apt/lists/*
 
 ## Download URL with curl
 
